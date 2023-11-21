@@ -15,13 +15,13 @@ const displayEntries = () => {
     const entries = retrieveEntries();
 
     const tableEntries= entries.map((entry) => {
-        const namecell = <td class='border px-4 py-2'>${entry.name}</td>;
-        const emailcell = <td class='border px-4 py-2'>${entry.email}</td>;
-        const passwordcell = <td class='border px-4 py-2'>${entry.password}</td>;
-        const dobcell = <td class='border px-4 py-2'>${entry.dob}</td>;
-        const acceptTermscell = <td class='border px-4 py-2'>${entry.acceptedTermsAndConditions}</td>;
+        const namecell = `<td class='border px-4 py-2'>${entry.name}</td>`;
+        const emailcell = `<td class='border px-4 py-2'>${entry.email}</td>`;
+        const passwordcell = `<td class='border px-4 py-2'>${entry.password}</td>`;
+        const dobcell = `<td class='border px-4 py-2'>${entry.dob}</td>`;
+        const acceptTermscell = `<td class='border px-4 py-2'>${entry.acceptedTermsAndConditions}</td>`;
 
-        const row = <tr>${namecell} ${emailcell} ${passwordcell} ${dobcell} ${acceptTermscell}</tr>;
+        const row = `<tr>${namecell} ${emailcell} ${passwordcell} ${dobcell} ${acceptTermscell}</tr>`;
         return row;
 
 
